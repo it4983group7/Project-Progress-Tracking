@@ -1,3 +1,16 @@
+# Software needed
+1.  git, download here: https://git-scm.com/downloads
+2.  Node.js, download here: https://nodejs.org/en/
+3.  Visual Studio Code, download here: https://code.visualstudio.com/
+
+# Clone the project
+
+Using git bash, write `git clone https://github.com/it4983group7/Project-Progress-Tracking.git` in a directory of your choosing.
+
+# Install Angular CLI
+
+In a terminal or command prompt, type `npm install -g @angular/cli`
+
 # ProjectProgressTracking
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
