@@ -3,15 +3,18 @@
 2.  Node.js, download here: https://nodejs.org/en/
 3.  Visual Studio Code, download here: https://code.visualstudio.com/
 
-# Clone the project
+## Clone the project
 
 Using git bash, write `git clone https://github.com/it4983group7/Project-Progress-Tracking.git` in a directory of your choosing.
 
-# Install Angular CLI
+## Install Angular CLI
 
 In a terminal or command prompt, type `npm install -g @angular/cli`
 
-# ProjectProgressTracking
+## Install Material Boot Design 
+In a terminal or command prompt, type `npm install angular-bootstrap-md --save`
+
+## ProjectProgressTracking
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
