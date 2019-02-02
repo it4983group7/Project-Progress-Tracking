@@ -10,3 +10,13 @@ body {
     padding: 10px;
       // box-shadow: 5px 10px 8px #888888;
   }
+
+.sidebar {
+  // width: 20%;
+  display: table-cell;
+}
+
+.center-stage {
+  width: 100%;
+  display: table-cell;
+}
