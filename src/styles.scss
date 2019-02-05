@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: grey;
+    // font-family: Tahoma, Geneva, sans-serif;
+  }
+
+.foreground-container {
+    background-color: #FEFFFF;
+    padding-bottom: 15px;
+    padding: 10px;
+      // box-shadow: 5px 10px 8px #888888;
+  }
+
+.sidebar {
+  // width: 20%;
+  display: table-cell;
+}
+
+.center-stage {
+  width: 100%;
+  display: table-cell;
+}
