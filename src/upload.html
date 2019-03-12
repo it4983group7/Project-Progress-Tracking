@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<script>
+	function chooseFile()
+	{
+		var x = document.createElement("INPUT");
+  		x.setAttribute("file", "name");
+  		document.body.appendChild(x);
+	}
+	
+	function uploadFile()
+	{
+		<?php include 'php_form.php'; ?>
+	}
+</script>
+	
+<head>
+
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <title>Capstone Management System</title>
+
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <img src="images/ksu_logo.png" id="logo" />
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li><a href="#!" id="nav-home">Projects</a></li><!-- add link to home page here -->
+          <li><a href="#!">Create</a></li><!-- add link to create project page here -->
+          <li><a href="#!">Upload</a></li><!-- add link to upload page here STUDENTS ONLY -->
+          <li><a href="#!">Account</a><!-- add link to user's account page here -->
+            <ul class="nav-dropdown">
+              <li><a href="#!">Log In</a></li><!-- add link to login page here -->
+              <li><a href="#!">Sign Up</a></li><!-- add link to sign up page here -->
+              <li><a href="#!">Admin</a></li><!-- add link to login page here -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- HEADER -->
+  <section class="header">
+    <h1 id="cms">Capstone Management System</h1>
+    <h3 id="dept">Kennesaw State University Department of Information
+      Technology </h3>
+  </section>
+
+  <!-- MAIN -->
+  <section class="prjmain">
+    <div>
+		<!-- The following should be pulled from the uploaded spreadsheet -->
+		<h2 style="text-align: center;">Upload Form</h2>
+		<select>
+			<option value="default">Select Project</option>
+			<!-- the following options names should be pulled from database -->
+			<!-- students should not be able to choose an option (admin/professor view only) - student project should automatically be chosen -->
+			<option value="prj1">Project 1</option>
+			<option value="prj2">Project 2</option>
+			<option value="prj3">Project 3</option>
+			<option value="prj4">Project 4</option>
+			<option value="prj5">Project 5</option>
+			<option value="prj6">Project 6</option>
+			<option value="prj7">Project 7</option>
+			<option value="prj8">Project 8</option>
+			<option value="prj9">Project 9</option>
+			<option value="prj10">Project 10</option>
+			<option value="prj11">Project 11</option>
+			<option value="prj12">Project 12</option>
+			<option value="prj13">Project 13</option>
+			<option value="prj14">Project 14</option>
+			<option value="prj15">Project 15</option>
+			<option value="prj16">Project 16</option>
+			<option value="prj17">Project 17</option>
+			<option value="prj18">Project 18</option>
+			<option value="prj19">Project 19</option>
+			<option value="prj20">Project 20</option>
+		</select>
+		<br>
+		<br>
+		<p><b>Name: </b></p> <!-- should take username from the logged in user -->
+		<br>
+		<p><b>Project Status:</b></p>
+		<input type="radio" >
+		<label>On Track</label>
+		<br>
+		<input type="radio" >
+		<label>Not On Track</label>
+		<br>
+		<input type="radio" >
+		<label>In Progress</label>
+		<br>
+		<br>
+		<button>Update</button> <!-- add script to update project status here -->
+		<br>
+		<br>
+		<p><b>Weekly Summary:</b></p>
+		<textarea class="textbox" rows="4" cols="50"></textarea>
+	  	<br>
+      	<button>Submit</button> <!-- add script to submit weekly report here -->
+		<br>
+		<br>
+		<p><b>Upload File:</b></p>
+		<br>
+		<button onclick="chooseFile">Choose File</button>
+		<button onclick="uploadFile">Upload</button>
+	</div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <p>© 2019 Kennesaw State University. All Rights Reserved.</p>
+  </section>
+
+</body>
+
+</html>
